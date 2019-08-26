@@ -7,7 +7,7 @@ import carro from '../images/cart.png'
 
 
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <StyledHeader>
     <Link to='/'>
       <img src={logo} alt='logotipo' />
@@ -20,19 +20,6 @@ const Header = ({ siteTitle }) => (
 
       </ul>
     </nav>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
   </StyledHeader>)
 
 Header.propTypes = {
