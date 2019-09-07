@@ -3,7 +3,7 @@ import priceFormat from '../utils/priceFormat'
 import { Tag, SizeButton, QtyButton, SizeSelect, Button, StyledCart, StyledProductDetail, QtySelect } from '../styles/components'
 import { SEO, Stars } from './'
 
-export default function productDetail({ price, sku: id, product: { name, metadata } }) {
+export default function productDetail({ price, id, product: { name, metadata } }) {
     const formatedPrice = priceFormat(price)
     const [size, setSize] = useState(2)
     const [qty, setQty] = useState(1)
